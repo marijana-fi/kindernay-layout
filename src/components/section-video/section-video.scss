@@ -1,0 +1,12 @@
+.video {
+	display: flex;
+	min-height: 850px;
+	background-image: url("/img/section-video-bg.jpg");
+	background-size: cover;
+	.play {
+		background: var(--orange);
+		border-radius: 50%;
+		width: 102px;
+		height: 102px;
+	}
+}

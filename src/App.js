@@ -1,13 +1,17 @@
 import React from "react";
-import Button from "./components/button/Button";
+
 import Header from "./components/header/Header";
 import SectionHero from "./components/section-hero/SectionHero";
+import SectionTechnology from "./components/section-technology/SectionTechnology";
+import SectionVideo from "./components/section-video/SectionVideo";
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
 			<SectionHero />
+			<SectionTechnology />
+			<SectionVideo />
 		</div>
 	);
 }

@@ -1,0 +1,14 @@
+.card-technology {
+	padding: 50px;
+	text-align: center;
+	border-radius: 4px;
+	&:hover {
+		box-shadow: 0 0 40px 2px #eff0f3;
+	}
+
+	.icon-technology {
+		width: 48px;
+		height: 48px;
+		margin-bottom: 20px;
+	}
+}

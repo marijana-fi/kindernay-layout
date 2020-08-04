@@ -2,7 +2,7 @@
 
 :root {
 	--orange: #fe6800;
-	--text-color: #eee;
+	--text-light: #56595b;
 }
 
 * {
@@ -31,8 +31,16 @@ button {
 }
 img {
 }
+
+.center {
+	text-align: center;
+}
+
 .white {
 	color: #fff;
+}
+.padding {
+	padding: 260px 0;
 }
 // Typography
 
@@ -47,10 +55,13 @@ h2 {
 	font-size: 56px;
 	font-family: "Archivo Black", sans-serif;
 	text-transform: uppercase;
+	margin-bottom: 40px;
 }
 h3 {
 	font-size: 16px;
 	font-family: "Archivo Black", sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 h4 {
 	font-size: 18px;
@@ -66,6 +77,8 @@ h5 {
 p {
 	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
+	color: var(--text-light);
+	line-height: 1.8;
 }
 
 a {
