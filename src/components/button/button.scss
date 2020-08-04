@@ -1,0 +1,20 @@
+.btn {
+	background: var(--orange);
+	color: #fff;
+	border: 2px solid var(--orange);
+	transition: all 0.2s;
+	&.primary {
+		border-radius: 5px;
+		padding: 10px 16px;
+		&:hover {
+			background: #fff;
+		}
+	}
+	&.play {
+		border-radius: 50%;
+		padding: 30px;
+		&:hover {
+			background: #fff;
+		}
+	}
+}

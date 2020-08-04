@@ -1,0 +1,1 @@
+.btn{background:var(--orange);color:#fff;border:2px solid var(--orange);-webkit-transition:all 0.2s;transition:all 0.2s}.btn.primary{border-radius:5px;padding:10px 16px}.btn.primary:hover{background:#fff}.btn.play{border-radius:50%;padding:30px}.btn.play:hover{background:#fff}

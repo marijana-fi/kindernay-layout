@@ -1,0 +1,35 @@
+header {
+	padding: 40px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+ul {
+	li {
+		display: inline-block;
+		margin-right: 30px;
+	}
+}
+.login {
+	margin-right: 20px;
+}
+.cart {
+	position: relative;
+	.cart-items {
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		top: -8px;
+		right: -8px;
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		background: var(--orange);
+		.item-number {
+			color: #fff;
+			font-size: 11px;
+		}
+	}
+}

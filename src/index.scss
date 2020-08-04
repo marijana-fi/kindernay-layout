@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap");
+
+:root {
+	--orange: #fe6800;
+	--text-color: #eee;
+}
+
+* {
+	box-sizing: border-box;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+	list-style-type: none;
+}
+
+button {
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: 16px;
+}
+img {
+}
+.white {
+	color: #fff;
+}
+// Typography
+
+h1 {
+	font-size: 70px;
+	font-family: "Archivo Black", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 35px;
+}
+h2 {
+	font-size: 56px;
+	font-family: "Archivo Black", sans-serif;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 16px;
+	font-family: "Archivo Black", sans-serif;
+}
+h4 {
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	margin-bottom: 40px;
+}
+h5 {
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+}
+
+p {
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
