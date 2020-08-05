@@ -36,7 +36,7 @@ function Footer() {
 						</ul>
 					</div>{" "}
 					<div className="col-2">
-						<ul>
+						<ul className="footer-list">
 							<li className="footer-list-item">
 								<a href="#">FAQ</a>
 							</li>
@@ -58,25 +58,29 @@ function Footer() {
 								<a
 									href="/"
 									className="social-icon"
-									aria-label="YouTube"
+									aria-label="Navigate to YouTube"
 								>
-									<img src="" alt="" />
+									<img src="" alt="youtube" />
 								</a>
 							</li>
-							<a
-								href="/"
-								className="social-icon"
-								aria-label="YouTube"
-							>
-								<img src="" alt="" />
-							</a>
-							<a
-								href="/"
-								className="social-icon"
-								aria-label="YouTube"
-							>
-								<img src="" alt="" />
-							</a>
+							<li>
+								<a
+									href="/"
+									className="social-icon"
+									aria-label="Navigate to Instagram"
+								>
+									<img src="" alt="instagram" />
+								</a>
+							</li>
+							<li>
+								<a
+									href="/"
+									className="social-icon"
+									aria-label="Navigate to Facebook"
+								>
+									<img src="" alt="facebook" />
+								</a>
+							</li>
 						</ul>
 						<a href="/payment">Payment</a>
 					</div>
@@ -85,7 +89,7 @@ function Footer() {
 						<div>
 							<span>Web by</span>
 							<a href="https://intellrocket.com/">
-								<img src="" alt="" />
+								<img src="" alt="intelrocket logo" />
 							</a>
 						</div>
 					</div>
