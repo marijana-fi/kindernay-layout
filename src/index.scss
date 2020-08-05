@@ -1,9 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;600&display=swap");
 
 :root {
 	--orange: #fe6800;
 	--text-light: #56595b;
 }
+// @media (min-width: 1200px) {
+// 	.container {
+// 		max-width: 1160px !important;
+// 	}
+// }
 
 * {
 	box-sizing: border-box;
@@ -13,6 +18,15 @@
 	font-family: "Open Sans", sans-serif;
 }
 
+input {
+	border: none;
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	&::placeholder {
+		color: #77797a;
+	}
+}
 body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
@@ -29,8 +43,6 @@ button {
 	border: none;
 	font-size: 16px;
 }
-img {
-}
 
 .center {
 	text-align: center;
@@ -42,6 +54,9 @@ img {
 .padding {
 	padding: 260px 0;
 }
+.padding-s {
+	padding: 216px 0;
+}
 // Typography
 
 h1 {
@@ -50,28 +65,41 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 35px;
+	font-weight: 400;
 }
 h2 {
 	font-size: 56px;
 	font-family: "Archivo Black", sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 40px;
+	font-weight: 400;
 }
 h3 {
 	font-size: 16px;
 	font-family: "Archivo Black", sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	line-height: 1.8;
+	font-weight: 400;
 }
 h4 {
 	font-size: 18px;
 	font-family: "Open Sans", sans-serif;
-	font-weight: 400;
 	margin-bottom: 40px;
+	font-weight: 400;
 }
 h5 {
 	font-size: 14px;
 	font-family: "Open Sans", sans-serif;
+	color: var(--text-light);
+	line-height: 1.8;
+	font-weight: 400;
+}
+h6 {
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.8;
+	font-weight: 400;
 }
 
 p {
@@ -79,6 +107,7 @@ p {
 	font-family: "Open Sans", sans-serif;
 	color: var(--text-light);
 	line-height: 1.8;
+	font-weight: 400;
 }
 
 a {

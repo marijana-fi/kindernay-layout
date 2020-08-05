@@ -3,11 +3,13 @@
 	color: #fff;
 	border: 2px solid var(--orange);
 	transition: all 0.2s;
+	border-radius: 5px;
 	&.primary {
-		border-radius: 5px;
-		padding: 10px 16px;
+		padding: 16px 48px;
 		&:hover {
-			background: #fff;
 		}
+	}
+	&.large {
+		padding: 22px 44px;
 	}
 }
