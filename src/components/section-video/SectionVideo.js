@@ -6,7 +6,7 @@ function SectionVideo() {
 		<section className="video align-items-center">
 			<div className="container">
 				<div className="row align-items-center justify-content-between">
-					<div className="col-5">
+					<div className="col-sm-12 col-md-6 col-lg-5">
 						<h2 className="white">Shift the way you ride.</h2>
 						<p className="white">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -14,9 +14,11 @@ function SectionVideo() {
 							dolore
 						</p>
 					</div>
-					<div className="col-6 center">
+					<div className="col-sm-12 col-md-6 center">
 						<button className="play">
 							<img src="img/play-icon.svg" alt="play video" />
+							<div className="base-pulse pulse1"></div>
+							<div className="base-pulse pulse2"></div>
 						</button>
 					</div>
 				</div>

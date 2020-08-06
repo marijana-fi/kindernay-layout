@@ -6,8 +6,7 @@
 	transition: all 0.3s;
 	overflow: hidden;
 	z-index: 1;
-
-	h3 {
+	.why-card-label {
 		padding: 0 60px;
 		position: relative;
 		margin-bottom: 30px;
@@ -44,5 +43,13 @@
 		object-fit: cover;
 		filter: brightness(0.4);
 		height: 100%;
+	}
+}
+
+@media (max-width: 992px) {
+	.card-why {
+		.why-card-label {
+			padding: 0;
+		}
 	}
 }

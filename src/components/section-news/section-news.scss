@@ -10,7 +10,7 @@
 		justify-content: flex-end;
 		padding: 30px;
 		min-height: 560px;
-		background: url("/img/card-bg-01.png") no-repeat center;
+		background: url("/img/grid-01.jpg") no-repeat center;
 		background-size: cover;
 		.news-card-label {
 			font-size: 18px;
@@ -24,11 +24,12 @@
 		&.top {
 			min-height: 265px;
 			margin-bottom: 30px;
-			background: url("/img/card-bg-01.png") no-repeat center;
+			background: url("/img/grid-02.jpg") no-repeat center;
 			background-size: cover;
 		}
 		&.bottom {
 			min-height: 265px;
+			background: url("/img/grid-03.jpg") no-repeat center;
 		}
 	}
 }

@@ -5,10 +5,13 @@ function Footer() {
 	return (
 		<footer>
 			<div className="container">
-				<div className="row justify-content-between">
+				<div className="row justify-content-between footer-info">
 					<div className="col-4">
 						<a href="/">
-							<img src="" alt="Kindernay Logo" />
+							<img
+								src="img/kindernay-black.png"
+								alt="Kindernay Logo"
+							/>
 						</a>
 						<p className="footer-desc">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -22,75 +25,91 @@ function Footer() {
 					<div className="col-2">
 						<ul className="footer-list">
 							<li className="footer-list-item">
-								<a href="#">Products</a>
+								<a href="/products">Products</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="#">Inside K'</a>
+								<a href="/inside">Inside K'</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="#">Company</a>
+								<a href="company">Company</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="#">Support</a>
+								<a href="/support">Support</a>
 							</li>
 						</ul>
 					</div>{" "}
 					<div className="col-2">
 						<ul className="footer-list">
 							<li className="footer-list-item">
-								<a href="#">FAQ</a>
+								<a href="/">FAQ</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="#">Payment</a>
+								<a href="/payment">Payment</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="#">Shipping</a>
+								<a href="/shipping">Shipping</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="#">Contact</a>
+								<a href="/contact">Contact</a>
 							</li>
 						</ul>
 					</div>
 					<div className="col-2">
-						<a href="/">Follow Us</a>
-						<ul className="social-list">
-							<li>
+						<h4 className="footer-item">Follow Us</h4>
+						<ul className="social-list d-flex align-items-center">
+							<li className="social-list-item">
 								<a
 									href="/"
 									className="social-icon"
 									aria-label="Navigate to YouTube"
 								>
-									<img src="" alt="youtube" />
+									<img src="img/yt-icon.svg" alt="youtube" />
 								</a>
 							</li>
-							<li>
+							<li className="social-list-item">
 								<a
 									href="/"
 									className="social-icon"
 									aria-label="Navigate to Instagram"
 								>
-									<img src="" alt="instagram" />
+									<img
+										src="img/ig-icon.svg"
+										alt="instagram"
+									/>
 								</a>
 							</li>
-							<li>
+							<li className="social-list-item">
 								<a
 									href="/"
 									className="social-icon"
 									aria-label="Navigate to Facebook"
 								>
-									<img src="" alt="facebook" />
+									<img src="img/fb-icon.svg" alt="facebook" />
 								</a>
 							</li>
 						</ul>
-						<a href="/payment">Payment</a>
+						<h4 className="footer-item">Payment</h4>
+						<img src="img/payments-footer.png" alt="" />
 					</div>
-					<div className="footer-copyright col-12 d-flex justify-content-between">
-						<h6>© 2020. All rights reserved</h6>
-						<div>
-							<span>Web by</span>
-							<a href="https://intellrocket.com/">
-								<img src="" alt="intelrocket logo" />
-							</a>
+				</div>
+			</div>
+			<div className="footer-copyright  ">
+				<div className="container">
+					<div className="row">
+						<div className="col-12 d-flex justify-content-between">
+							<h6>© 2020. All rights reserved</h6>
+							<div className="d-flex align-items-center">
+								<span>Web by</span>
+								<a
+									href="https://intellrocket.com/"
+									className="logo"
+								>
+									<img
+										src="img/intell-rocket-logo.png"
+										alt="intellrocket logo"
+									/>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>

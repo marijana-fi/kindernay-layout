@@ -29,6 +29,8 @@ function SectionNewsletter() {
 					</div>
 				</div>
 			</div>
+
+			<img src="img/bottom-newsletter-bg.jpg" alt="" />
 		</section>
 	);
 }

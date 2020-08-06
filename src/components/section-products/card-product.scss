@@ -5,12 +5,25 @@
 	.desc-product {
 		margin-bottom: 30px;
 	}
-	button {
-		img {
-			margin-left: 5px;
+	.cta-product {
+		span {
+			transition: all 0.2s;
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			position: relative;
+			background: url("/img/arrow-right-icon.svg") no-repeat center center;
 		}
-	}
-	.learn-more {
-		margin-right: 30px;
+		&:first-of-type {
+			margin-right: 30px;
+		}
+		&:hover {
+			color: var(--orange);
+			span {
+				transform: translateX(4px);
+				background: url("/img/arrow-right-icon-hover.svg") no-repeat
+					center center;
+			}
+		}
 	}
 }
