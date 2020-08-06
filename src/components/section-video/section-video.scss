@@ -1,23 +1,24 @@
 .video {
+	--button-size: 102px;
 	display: flex;
-	min-height: 850px;
 	background-image: url("/img/section-video-bg.jpg");
 	background-size: cover;
-
 	.play {
 		background: var(--orange);
 		border-radius: 50%;
-		width: 102px;
-		height: 102px;
+		width: var(--button-size);
+		height: var(--button-size);
 		position: relative;
-
+		img {
+			display: inline-block;
+		}
 		&:hover {
 		}
 		.base-pulse {
 			background: transparent;
 			border-radius: 50%;
-			height: 142px;
-			width: 142px;
+			height: calc(var(--button-size) + 40px);
+			width: calc(var(--button-size) + 40px);
 			position: absolute;
 			top: -20px;
 			left: -20px;
@@ -47,5 +48,21 @@
 	100% {
 		transform: scale(1.2, 1.2);
 		opacity: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.video {
+		--button-size: 68px;
+		.video-desc {
+		}
+		.play {
+			width: 68px;
+			height: 68px;
+			.base-pulse {
+				width: 108px;
+				height: 108px;
+			}
+		}
 	}
 }

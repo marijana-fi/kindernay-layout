@@ -14,7 +14,7 @@ function SectionNews() {
 							labore et dolore magna aliqua.
 						</p>
 					</div>
-					<div className="col-6">
+					<div className="col-sm-12 col-md-6">
 						<div className="news-card">
 							<h3 className="white news-card-label">
 								Lorem ipsum dolor sit amet
@@ -29,7 +29,7 @@ function SectionNews() {
 							</p>
 						</div>
 					</div>
-					<div className="col-6">
+					<div className="col-sm-12 col-md-6">
 						<div className="news-card top">
 							<h3 className="white news-card-label">
 								Lorem ipsum dolor sit amet

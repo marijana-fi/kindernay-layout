@@ -17,6 +17,11 @@
 	padding: 0;
 	font-family: "Open Sans", sans-serif;
 }
+img {
+	max-width: 100%;
+	width: auto;
+	display: block;
+}
 
 input {
 	border: none;
@@ -53,12 +58,29 @@ button {
 }
 .padding {
 	padding: 260px 0;
+	@media (max-width: 1480px) {
+		padding: 180px 0;
+	}
+
+	@media (max-width: 768px) {
+		padding: 120px 0;
+	}
 }
 .padding-s {
 	padding: 216px 0;
+	@media (max-width: 1480px) {
+		padding: 160px 0;
+	}
+	@media (max-width: 768px) {
+		padding: 100px 0;
+	}
 }
 // Typography
-
+* {
+	:focus {
+		outline: none;
+	}
+}
 h1 {
 	font-size: 70px;
 	font-family: "Archivo Black", sans-serif;
@@ -69,6 +91,9 @@ h1 {
 	@media (max-width: 768px) {
 		font-size: 50px;
 	}
+	@media (max-width: 576px) {
+		font-size: 36px;
+	}
 }
 h2 {
 	font-size: 56px;
@@ -76,8 +101,12 @@ h2 {
 	text-transform: uppercase;
 	margin-bottom: 40px;
 	font-weight: 400;
+	@media (max-width: 992px) {
+		font-size: 48px;
+	}
 	@media (max-width: 768px) {
 		font-size: 40px;
+		margin-bottom: 20px;
 	}
 }
 h3 {
@@ -89,6 +118,7 @@ h3 {
 	font-weight: 400;
 	@media (max-width: 768px) {
 		line-height: 1.4;
+		margin-bottom: 15px;
 	}
 }
 h4 {
@@ -96,6 +126,9 @@ h4 {
 	font-family: "Open Sans", sans-serif;
 	margin-bottom: 40px;
 	font-weight: 400;
+	@media (max-width: 768px) {
+		font-size: 16px;
+	}
 }
 h5 {
 	font-size: 14px;

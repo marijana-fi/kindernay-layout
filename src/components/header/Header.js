@@ -3,6 +3,12 @@ import "./header.scss";
 
 function Header() {
 	const [offset, setOffset] = useState(0);
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	function handleMenuOpen(params) {
+		setMenuOpen(!menuOpen);
+	}
+	console.log(menuOpen);
 
 	window.addEventListener("scroll", handleScroll);
 	function handleScroll() {
@@ -25,7 +31,7 @@ function Header() {
 							/>
 						</a>
 					</div>
-					<div className="col-md-auto align-items-center d-flex justify-content-end">
+					<div className="col col-md-auto align-items-center d-flex justify-content-end">
 						<nav>
 							<ul className="header-list">
 								<li className="header-item">
@@ -47,13 +53,33 @@ function Header() {
 						</nav>
 
 						<button className="login">
-							<img src="img/bag-img.svg" alt="open cart" />
+							<img
+								src={
+									offset > 0
+										? "img/bag-icon-black.svg"
+										: "img/bag-icon.svg"
+								}
+								alt="open cart"
+							/>
 						</button>
 						<button className="cart">
-							<img src="img/bag-img.svg" alt="open cart" />
+							<img
+								src={
+									offset > 0
+										? "img/bag-icon-black.svg"
+										: "img/bag-icon.svg"
+								}
+								alt="open cart"
+							/>
 							<div className="cart-items">
 								<span className="item-number">1</span>
 							</div>
+						</button>
+						<button
+							className={menuOpen ? "menu active" : "menu"}
+							onClick={handleMenuOpen}
+						>
+							<span></span>
 						</button>
 					</div>
 				</div>

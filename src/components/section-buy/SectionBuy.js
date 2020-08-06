@@ -4,10 +4,10 @@ import Button from "../button/Button";
 
 function SectionBuy() {
 	return (
-		<section className="section-buy align-items-center">
+		<section className="section-buy align-items-center ">
 			<div className="container">
 				<div className="row align-items-center justify-content-between">
-					<div className="col-6">
+					<div className="col-sm-12 col-md-8 col-lg-6">
 						<h2 className="white">get your kindernay xiv</h2>
 						<p className="white">
 							The first internal gear hub that accommodates a 12mm

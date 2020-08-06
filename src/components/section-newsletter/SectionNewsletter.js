@@ -15,7 +15,7 @@ function SectionNewsletter() {
 							labore et dolore magna aliqua.
 						</p>
 					</div>
-					<div className="col-8 mx-auto">
+					<div className="col-xs-12 col-md-8 mx-auto">
 						<form
 							action=""
 							className="d-flex justify-content-between"

@@ -33,3 +33,12 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.section-news {
+		padding: 100px 0;
+		.news-card {
+			margin-bottom: 30px;
+		}
+	}
+}

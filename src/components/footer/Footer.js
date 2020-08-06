@@ -6,7 +6,7 @@ function Footer() {
 		<footer>
 			<div className="container">
 				<div className="row justify-content-between footer-info">
-					<div className="col-4">
+					<div className="col-6 mb-5 col-md-4">
 						<a href="/">
 							<img
 								src="img/kindernay-black.png"
@@ -22,7 +22,7 @@ function Footer() {
 							Terms & Condition / Privacy Policy
 						</a>
 					</div>
-					<div className="col-2">
+					<div className="col-4 col-offset mb-5 col-md-2">
 						<ul className="footer-list">
 							<li className="footer-list-item">
 								<a href="/products">Products</a>
@@ -38,7 +38,7 @@ function Footer() {
 							</li>
 						</ul>
 					</div>{" "}
-					<div className="col-2">
+					<div className="col-6  col-md-2">
 						<ul className="footer-list">
 							<li className="footer-list-item">
 								<a href="/">FAQ</a>
@@ -54,7 +54,7 @@ function Footer() {
 							</li>
 						</ul>
 					</div>
-					<div className="col-2">
+					<div className="col-4 col-offset col-md-2">
 						<h4 className="footer-item">Follow Us</h4>
 						<ul className="social-list d-flex align-items-center">
 							<li className="social-list-item">

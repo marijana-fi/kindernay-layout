@@ -1,7 +1,7 @@
 .section-why {
 	background: #f6f8fc;
 	padding: 200px 0;
-	h2 {
+	.why-label {
 		margin-bottom: 130px;
 	}
 	.card-why:nth-last-of-type(1) {
@@ -17,6 +17,14 @@
 			.why-card-label {
 				padding: 0;
 			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.section-why {
+		padding: 100px 0;
+		.why-label {
+			margin-bottom: 60px;
 		}
 	}
 }

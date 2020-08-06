@@ -9,7 +9,7 @@ function SectionWhy() {
 			<div className="container">
 				<div className="row">
 					<div className="col-12 center">
-						<h2>Why kindernay</h2>
+						<h2 className="why-label">Why kindernay</h2>
 					</div>
 
 					{whyData.map((card) => (

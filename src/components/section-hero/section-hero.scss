@@ -1,7 +1,7 @@
 .hero {
 	display: flex;
 	min-height: 100vh;
-	background-image: url("/img/hero-section.jpg");
+	background: url("/img/hero-section.jpg") center right;
 	background-size: cover;
 	.explore {
 		display: flex;
