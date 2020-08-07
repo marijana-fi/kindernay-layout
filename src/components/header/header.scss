@@ -1,4 +1,5 @@
 header {
+	--dark: #000;
 	padding: 30px 0;
 	position: fixed;
 	top: 0;
@@ -6,18 +7,42 @@ header {
 	width: 100%;
 	z-index: 2;
 	transition: all 0.2s;
+	.overlay {
+		position: fixed;
+		z-index: 3;
+		width: 100vw;
+		height: 100vh;
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+		pointer-events: none;
+		margin-top: -20px;
+		&.show-overlay {
+			background: rgba(0, 0, 0, 0.7);
+			pointer-events: all;
+		}
+	}
 	&.bg-white {
 		padding: 20px 0;
 		transition: all 0.3s;
 		background: #fff;
 		box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.08);
 		.header-list {
+			background: #fff;
 			.header-item {
 				&::after {
-					background: #000;
+					background: var(--dark);
 				}
 				a {
-					color: #000;
+					color: var(--dark);
+				}
+			}
+		}
+		.menu {
+			span {
+				background: var(--dark);
+				&::after,
+				&::before {
+					background: var(--dark);
 				}
 			}
 		}
@@ -71,8 +96,8 @@ header {
 	}
 	.menu {
 		position: relative;
-		width: 25px;
-		height: 25px;
+		width: 22px;
+		height: 22px;
 		display: none;
 		span {
 			display: block;
@@ -127,19 +152,69 @@ header {
 		}
 	}
 }
+
 @media (max-width: 768px) {
 	header {
+		overflow: hidden;
 		.header-list {
-			display: none;
+			z-index: 4;
+			padding: 50px 20px 0 30px;
+			position: fixed;
+			height: 100vh;
+			transform: translateX(-100%);
+			min-width: 260px;
+			top: 0;
+			left: 0;
+			background: #fff;
+			transition: all 0.3s;
+
+			&.open {
+				transform: translateX(0);
+				transition: all 0.3s;
+			}
 			.header-item {
+				display: block;
 				margin-right: 15px;
+				margin-bottom: 30px;
+
+				a {
+					color: var(--dark);
+				}
 			}
 		}
-		button {
+		button:not(:last-of-type) {
 			margin-right: 20px;
 		}
 		.menu {
 			display: block;
+			z-index: 5;
+
+			&.active {
+				span {
+					&::after,
+					&::before {
+						background: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	header {
+		.header-list {
+			width: 100%;
+		}
+		.menu {
+			&.active {
+				span {
+					&::after,
+					&::before {
+						background: var(--dark);
+					}
+				}
+			}
 		}
 	}
 }

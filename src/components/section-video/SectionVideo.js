@@ -6,7 +6,7 @@ function SectionVideo() {
 		<section className="video align-items-center padding">
 			<div className="container">
 				<div className="row align-items-center justify-content-between">
-					<div className="col-sm-8 col-md-6 col-lg-5">
+					<div className="col-sm-8 mb-5 mb-md-0 col-md-6 col-lg-5">
 						<h2 className="white">Shift the way you ride.</h2>
 						<p className="white video-desc">
 							Lorem ipsum dolor sit amet, consectetur adipiscing

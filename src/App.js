@@ -11,10 +11,12 @@ import SectionBuy from "./components/section-buy/SectionBuy";
 import SectionNews from "./components/section-news/SectionNews";
 import SectionNewsletter from "./components/section-newsletter/SectionNewsletter";
 import Footer from "./components/footer/Footer";
+import HeroSlider from "./components/hero-slider/HeroSlider";
 
 function App() {
 	return (
 		<div className="App">
+			<HeroSlider />
 			<Header />
 			<SectionHero />
 			<SectionTechnology />

@@ -3,12 +3,11 @@ import "./header.scss";
 
 function Header() {
 	const [offset, setOffset] = useState(0);
-	const [menuOpen, setMenuOpen] = useState(false);
+	const [isMenuOpen, setMenuOpen] = useState(false);
 
 	function handleMenuOpen(params) {
-		setMenuOpen(!menuOpen);
+		setMenuOpen(!isMenuOpen);
 	}
-	console.log(menuOpen);
 
 	window.addEventListener("scroll", handleScroll);
 	function handleScroll() {
@@ -17,8 +16,11 @@ function Header() {
 
 	return (
 		<header className={offset > 0 ? "bg-white" : ""}>
+			<div
+				className={isMenuOpen ? "overlay show-overlay" : "overlay"}
+			></div>
 			<div className="container">
-				<div className="row justify-content-between">
+				<div className="row justify-content-between align-items-center">
 					<div className="col ">
 						<a href="/" title="Go to Home Page">
 							<img
@@ -33,7 +35,13 @@ function Header() {
 					</div>
 					<div className="col col-md-auto align-items-center d-flex justify-content-end">
 						<nav>
-							<ul className="header-list">
+							<ul
+								className={
+									isMenuOpen
+										? "header-list open"
+										: "header-list"
+								}
+							>
 								<li className="header-item">
 									<a href="/products">Products</a>
 								</li>
@@ -52,7 +60,7 @@ function Header() {
 							</ul>
 						</nav>
 
-						<button className="login">
+						<button className="login" aria-label="Login">
 							<img
 								src={
 									offset > 0
@@ -62,7 +70,7 @@ function Header() {
 								alt="open cart"
 							/>
 						</button>
-						<button className="cart">
+						<button className="cart" aria-label="Open Cart">
 							<img
 								src={
 									offset > 0
@@ -76,8 +84,9 @@ function Header() {
 							</div>
 						</button>
 						<button
-							className={menuOpen ? "menu active" : "menu"}
+							className={isMenuOpen ? "menu active" : "menu"}
 							onClick={handleMenuOpen}
+							aria-label="Open Menu"
 						>
 							<span></span>
 						</button>

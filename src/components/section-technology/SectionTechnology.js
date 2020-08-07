@@ -4,7 +4,7 @@ import technologyData from "../../technologyData";
 
 function SectionTechnology() {
 	return (
-		<section>
+		<section className="section-technology">
 			<div className="container">
 				<div className="row padding">
 					<h2 className="col-12 center">

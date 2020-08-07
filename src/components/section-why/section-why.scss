@@ -28,3 +28,12 @@
 		}
 	}
 }
+
+@media (max-width: 576px) {
+	.section-why {
+		padding: 90px 0 60px 0;
+		.why-label {
+			margin-bottom: 30px;
+		}
+	}
+}
