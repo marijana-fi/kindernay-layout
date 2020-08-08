@@ -1,6 +1,7 @@
 import React from "react";
 import CardTechnology from "./CardTechnology";
-import technologyData from "../../technologyData";
+
+import technologyData from "../../data/technologyData";
 
 function SectionTechnology() {
 	return (

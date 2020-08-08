@@ -1,6 +1,6 @@
 import React from "react";
-import productsData from "../../productsData";
 import CardProduct from "./CardProduct";
+import productsData from "../../data/productsData";
 
 function SectionProducts() {
 	return (

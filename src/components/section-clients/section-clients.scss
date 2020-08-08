@@ -1,6 +1,56 @@
 .section-clients {
+	.slick-slider {
+		height: 100%;
+	}
+	.slick-list {
+		height: 100%;
+	}
+	button {
+		&.slick-arrow {
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			top: 65%;
+			background-color: #fff;
+			box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+			&:hover {
+				background-color: var(--orange);
+			}
+		}
+		&.slick-prev {
+			left: 73%;
+			background: #fff url("/img/slider-left_arrow-grey.svg") center
+				center no-repeat;
+		}
+		&.slick-next {
+			right: 20%;
+			background: #fff url("/img/slider-right_arrow-grey.svg") center
+				center no-repeat;
+		}
+	}
+
+	.slick-slide > div {
+		display: flex;
+	}
+	.slick-dots {
+		position: absolute;
+		bottom: 20%;
+		left: 25%;
+		width: auto;
+		li {
+			margin: 0;
+			&.slick-active {
+				button {
+					&::before {
+						color: var(--orange);
+					}
+				}
+			}
+		}
+	}
 	img {
 		width: 100%;
+		position: relative;
 	}
 	.client-desc {
 		margin-bottom: 40px;

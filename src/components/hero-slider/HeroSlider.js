@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 function HeroSlider() {
 	return (
 		<div className="hero-slider">
-			<Slider dots={false} className="slider">
+			<Slider dots={false} infinite={false} className="slider">
 				<img src="img/hero-section.jpg" alt="" />
 				<img src="img/hero-section.jpg" alt="" />
 			</Slider>

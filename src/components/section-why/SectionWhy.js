@@ -1,7 +1,7 @@
 import React from "react";
 import "./section-why.scss";
-import whyData from "../../whyData";
 import CardWhy from "./CardWhy";
+import whyData from "../../data/whyData";
 
 function SectionWhy() {
 	return (
