@@ -24,7 +24,6 @@ function App() {
 			<SectionProducts />
 			<SectionWhy />
 			<SectionClients />
-
 			<SectionBuy />
 			<SectionNews />
 			<SectionNewsletter />
