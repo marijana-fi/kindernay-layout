@@ -43,16 +43,24 @@ function Header() {
 								}
 							>
 								<li className="header-item">
-									<a href="/products">Products</a>
+									<a href="/products" className="underline">
+										Products
+									</a>
 								</li>
 								<li className="header-item">
-									<a href="/inside">Inside K'</a>
+									<a href="/inside" className="underline">
+										Inside K'
+									</a>
 								</li>
 								<li className="header-item">
-									<a href="/technology">Technology</a>
+									<a href="/technology" className="underline">
+										Technology
+									</a>
 								</li>
 								<li className="header-item">
-									<a href="/company">Company</a>
+									<a href="/company" className="underline">
+										Company
+									</a>
 								</li>
 								<li className="header-item">
 									<a href="/support">Support</a>

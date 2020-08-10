@@ -25,32 +25,48 @@ function Footer() {
 					<div className="col-6 col-sm-4 mb-4 col-md-2">
 						<ul className="footer-list">
 							<li className="footer-list-item">
-								<a href="/products">Products</a>
+								<a href="/products" className="underline">
+									Products
+								</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="/inside">Inside K'</a>
+								<a href="/inside" className="underline">
+									Inside K'
+								</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="company">Company</a>
+								<a href="company" className="underline">
+									Company
+								</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="/support">Support</a>
+								<a href="/support" className="underline">
+									Support
+								</a>
 							</li>
 						</ul>
 					</div>
 					<div className="col-6 col-sm-4  col-md-2">
 						<ul className="footer-list">
 							<li className="footer-list-item">
-								<a href="/">FAQ</a>
+								<a href="/" className="underline">
+									FAQ
+								</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="/payment">Payment</a>
+								<a href="/payment" className="underline">
+									Payment
+								</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="/shipping">Shipping</a>
+								<a href="/shipping" className="underline">
+									Shipping
+								</a>
 							</li>
 							<li className="footer-list-item">
-								<a href="/contact">Contact</a>
+								<a href="/contact" className="underline">
+									Contact
+								</a>
 							</li>
 						</ul>
 					</div>

@@ -6,6 +6,9 @@
 	transition: all 0.3s;
 	overflow: hidden;
 	z-index: 1;
+	&:last-of-type {
+		margin: 0 auto;
+	}
 	.why-card-label {
 		padding: 0 60px;
 		position: relative;

@@ -27,3 +27,20 @@
 		}
 	}
 }
+@media (max-width: 768px) {
+	.card-product {
+		.cta-product:first-of-type {
+			margin-bottom: 10px;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.card-product {
+		&:first-of-type {
+			margin-bottom: 20px;
+		}
+		.cta-product:first-of-type {
+			margin-bottom: 0;
+		}
+	}
+}

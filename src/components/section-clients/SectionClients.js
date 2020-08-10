@@ -2,9 +2,9 @@ import React, { useState, useRef } from "react";
 import "./section-clients.scss";
 import clientsData from "../../data/clientsData";
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SectionTitle from "../SectionTitle";
 
 function SectionClients() {
 	const customSlider = useRef();
@@ -47,14 +47,14 @@ function SectionClients() {
 							<div className="col-xs-12 col-md-6 col-lg-5 mb-4">
 								<div className="img-wrap">
 									<img src={data.image} alt="client" />
-									<div className="slider-dots">
+									<div className="slider-dots large-screen">
 										{renderDots()}
 									</div>
 								</div>
 							</div>
 
-							<div className="col-sm-12 col-md-6">
-								<h2>Our satisfied clients</h2>
+							<div className="col-sm-12 col-md-6 mb-4 mb-sm-0">
+								<SectionTitle innerText="Our satisfied clients" />
 
 								<p className="client-desc">{data.desc}</p>
 								<div className="client-name">
@@ -95,6 +95,11 @@ function SectionClients() {
 											</svg>
 										</button>
 									</div>
+								</div>
+							</div>
+							<div className="col-12">
+								<div className="slider-dots mobile">
+									{renderDots()}
 								</div>
 							</div>
 						</div>

@@ -1,14 +1,19 @@
 import React from "react";
 import "./section-buy.scss";
 import Button from "../button/Button";
+import SectionTitle from "../SectionTitle";
 
 function SectionBuy() {
 	return (
-		<section className="section-buy align-items-center ">
+		<section id="section-buy" className="align-items-center">
 			<div className="container">
 				<div className="row align-items-center justify-content-between">
 					<div className="col-sm-12 col-md-8 col-lg-6">
-						<h2 className="white">get your kindernay xiv</h2>
+						<SectionTitle
+							innerText="get your kindernay xiv"
+							customClass="white"
+						/>
+
 						<p className="white">
 							The first internal gear hub that accommodates a 12mm
 							through-bolt, yielding a total of 14 speeds out of

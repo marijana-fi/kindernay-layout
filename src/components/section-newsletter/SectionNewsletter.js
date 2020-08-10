@@ -1,14 +1,15 @@
 import React from "react";
 import Button from "../button/Button";
 import "./section-newsletter.scss";
+import SectionTitle from "../SectionTitle";
 
 function SectionNewsletter() {
 	return (
-		<section className="newsletter">
+		<section id="section-newsletter">
 			<div className="container">
 				<div className="row">
 					<div className="col-12 center">
-						<h2>newsletter</h2>
+						<SectionTitle innerText="newsletter" />
 						<p className="newsletter-desc">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit, sed do eiusmod tempor <br /> incididunt ut
@@ -29,8 +30,17 @@ function SectionNewsletter() {
 					</div>
 				</div>
 			</div>
-
-			<img src="img/bottom-newsletter-bg.jpg" alt="" />
+			<picture>
+				<source
+					media="(max-width: 576px)"
+					srcSet="img/bottom-newsletter-mobile.jpg"
+				/>
+				<source
+					media="(min-width: 600px)"
+					srcSet="img/bottom-newsletter-bg.jpg"
+				/>
+				<img src="img/bottom-newsletter-bg.jpg" alt="" />
+			</picture>
 		</section>
 	);
 }

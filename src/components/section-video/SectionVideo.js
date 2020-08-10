@@ -1,13 +1,17 @@
 import React from "react";
 import "./section-video.scss";
+import SectionTitle from "../SectionTitle";
 
 function SectionVideo() {
 	return (
-		<section className="video align-items-center padding">
+		<section id="section-video" className=" align-items-center padding">
 			<div className="container">
 				<div className="row align-items-center justify-content-between">
 					<div className="col-sm-8 mb-5 mb-md-0 col-md-6 col-lg-5">
-						<h2 className="white">Shift the way you ride.</h2>
+						<SectionTitle
+							innerText="Shift the way you ride."
+							customClass="white"
+						/>
 						<p className="white video-desc">
 							Lorem ipsum dolor sit amet, consectetur adipiscing
 							elit, sed do eiusmod tempor incididunt ut labore et

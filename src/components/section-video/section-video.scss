@@ -1,18 +1,23 @@
-.video {
+#section-video {
 	--button-size: 102px;
 	display: flex;
 	background-image: url("/img/section-video-bg.jpg");
 	background-size: cover;
+	background-position: top;
 	.play {
 		background: var(--orange);
 		border-radius: 50%;
 		width: var(--button-size);
 		height: var(--button-size);
 		position: relative;
+		padding: 26px;
+		transform: scale(1);
+		transition: transform 0.3s;
 		img {
 			display: inline-block;
 		}
 		&:hover {
+			transform: scale(0.8);
 		}
 		.base-pulse {
 			background: transparent;
@@ -52,7 +57,7 @@
 }
 
 @media (max-width: 768px) {
-	.video {
+	#section-video {
 		--button-size: 68px;
 		.video-desc {
 		}
