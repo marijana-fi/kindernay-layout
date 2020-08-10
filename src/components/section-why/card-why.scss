@@ -1,60 +1,59 @@
 .card-why {
-	border-radius: 8px;
-	text-align: center;
-	position: relative;
-	padding: 70px;
-	transition: all 0.3s;
-	overflow: hidden;
-	z-index: 1;
-	&:last-of-type {
-		margin: 0 auto;
-	}
-	.why-card-label {
-		padding: 0 60px;
-		position: relative;
-		margin-bottom: 30px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  padding: 70px;
+  transition: all 0.3s;
+  overflow: hidden;
+  z-index: 1;
+  &:last-of-type {
+    margin: 0 auto;
+  }
+  .why-card-label {
+    position: relative;
+    margin-bottom: 30px;
 
-		&::after {
-			content: "";
-			position: absolute;
-			bottom: -15px;
-			left: 50%;
-			transform: translateX(-50%);
-			width: 70px;
-			height: 4px;
-			background: red;
-		}
-	}
-	&:hover {
-		.card-bg {
-			opacity: 1;
-		}
-		h3 {
-			color: #fff;
-		}
-		p {
-			color: #fff;
-		}
-	}
-	.card-bg {
-		z-index: -1;
-		transition: all 0.3s;
-		opacity: 0;
-		position: absolute;
-		width: 100%;
-		top: 0;
-		left: 0;
-		object-fit: cover;
-		filter: brightness(0.4);
-		height: 100%;
-	}
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 4px;
+      background: red;
+    }
+  }
+  &:hover {
+    .card-bg {
+      opacity: 1;
+    }
+    h3 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+  .card-bg {
+    z-index: -1;
+    transition: all 0.3s;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: brightness(0.4);
+    height: 100%;
+  }
 }
 
 @media (max-width: 992px) {
-	.card-why {
-		padding: 20px;
-		.why-card-label {
-			padding: 0;
-		}
-	}
+  .card-why {
+    padding: 20px;
+    .why-card-label {
+      padding: 0;
+    }
+  }
 }
