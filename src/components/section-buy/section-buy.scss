@@ -1,17 +1,33 @@
 #section-buy {
-	display: flex;
-	padding: 140px 0;
-	background-image: url("/img/section-buy-bg.jpg");
-	background-size: cover;
-	background-position: center center;
-	p {
-		font-size: 14px;
-		margin-bottom: 40px;
-	}
+  display: flex;
+  .react-parallax {
+    .react-parallax-content {
+      width: 100vw;
+      & > div {
+        padding-top: 120px;
+        padding-bottom: 120px;
+      }
+    }
+  }
+
+  // background-image: url("/img/section-buy-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
-	#section-buy {
-		padding: 80px 0;
-	}
+  #section-buy {
+    .react-parallax {
+      .react-parallax-content {
+        & > div {
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+      }
+    }
+  }
 }

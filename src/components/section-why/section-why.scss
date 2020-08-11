@@ -1,37 +1,40 @@
 #section-why {
-	background: #f6f8fc;
-	padding: 200px 0;
-	.why-label {
-		margin-bottom: 130px;
-	}
-	.section-title {
-		margin-bottom: 100px;
-	}
+  background: #f6f8fc;
+  padding: 200px 0;
+  .why-label {
+    margin-bottom: 130px;
+  }
+  .section-title {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 992px) {
-	#section-why {
-		.card-why:nth-last-of-type(1) {
-			.why-card-label {
-				padding: 0;
-			}
-		}
-	}
+  #section-why {
+    .card-why:nth-last-of-type(1) {
+      .why-card-label {
+        padding: 0;
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
-	#section-why {
-		padding: 100px 0;
-		.why-label {
-			margin-bottom: 60px;
-		}
-	}
+  #section-why {
+    padding: 100px 0;
+    .why-label {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
-	#section-why {
-		padding: 90px 0 60px 0;
-		.why-label {
-			margin-bottom: 30px;
-		}
-	}
+  #section-why {
+    padding: 90px 0 60px 0;
+    .why-label {
+      margin-bottom: 30px;
+    }
+    .section-title {
+      margin-bottom: 30px;
+    }
+  }
 }
