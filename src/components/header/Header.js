@@ -48,7 +48,9 @@ function Header() {
                   </a>
                 </li>
                 <li className="header-item">
-                  <a href="/support">Support</a>
+                  <a href="/support" className="underline">
+                    Support
+                  </a>
                 </li>
               </ul>
             </nav>
