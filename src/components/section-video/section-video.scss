@@ -1,73 +1,73 @@
 #section-video {
-	--button-size: 102px;
-	display: flex;
-	background-image: url("/img/section-video-bg.jpg");
-	background-size: cover;
-	background-position: top;
-	.play {
-		background: var(--orange);
-		border-radius: 50%;
-		width: var(--button-size);
-		height: var(--button-size);
-		position: relative;
-		padding: 26px;
-		transform: scale(1);
-		transition: transform 0.3s;
-		img {
-			display: inline-block;
-		}
-		&:hover {
-			transform: scale(0.8);
-		}
-		.base-pulse {
-			background: transparent;
-			border-radius: 50%;
-			height: calc(var(--button-size) + 40px);
-			width: calc(var(--button-size) + 40px);
-			position: absolute;
-			top: -20px;
-			left: -20px;
-			opacity: 0;
-			border: 1px solid #fff;
-		}
-	}
+  --button-size: 102px;
+  display: flex;
+  background-image: url("img/section-video-bg.jpg");
+  background-size: cover;
+  background-position: top;
+  .play {
+    background: var(--orange);
+    border-radius: 50%;
+    width: var(--button-size);
+    height: var(--button-size);
+    position: relative;
+    padding: 26px;
+    transform: scale(1);
+    transition: transform 0.3s;
+    img {
+      display: inline-block;
+    }
+    &:hover {
+      transform: scale(0.8);
+    }
+    .base-pulse {
+      background: transparent;
+      border-radius: 50%;
+      height: calc(var(--button-size) + 40px);
+      width: calc(var(--button-size) + 40px);
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      opacity: 0;
+      border: 1px solid #fff;
+    }
+  }
 }
 
 .pulse1 {
-	animation: pulse1 2s ease-out infinite;
+  animation: pulse1 2s ease-out infinite;
 }
 
 .pulse2 {
-	animation: pulse1 2s ease-out infinite;
-	animation-delay: 1000ms;
+  animation: pulse1 2s ease-out infinite;
+  animation-delay: 1000ms;
 }
 
 @keyframes pulse1 {
-	0% {
-		transform: scale(0.7, 0.7);
-		opacity: 0;
-	}
-	40% {
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1.2, 1.2);
-		opacity: 0;
-	}
+  0% {
+    transform: scale(0.7, 0.7);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
 }
 
 @media (max-width: 768px) {
-	#section-video {
-		--button-size: 68px;
-		.video-desc {
-		}
-		.play {
-			width: 68px;
-			height: 68px;
-			.base-pulse {
-				width: 108px;
-				height: 108px;
-			}
-		}
-	}
+  #section-video {
+    --button-size: 68px;
+    .video-desc {
+    }
+    .play {
+      width: 68px;
+      height: 68px;
+      .base-pulse {
+        width: 108px;
+        height: 108px;
+      }
+    }
+  }
 }
