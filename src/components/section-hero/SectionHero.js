@@ -27,7 +27,7 @@ function SectionHero() {
           <>
             <img
               src={windowWidth <= 576 ? data.imageMobile : data.image}
-              alt=""
+              alt={data.label}
               className="hero-bg-image"
             />
             <div className="container d-flex hero-text-wrap">
@@ -43,7 +43,7 @@ function SectionHero() {
                       <img
                         className="align-self-center explore-arrow"
                         src="img/arrow-down.svg"
-                        alt=""
+                        alt="explore"
                       />
                     </div>
                     <p className="white">Explore</p>

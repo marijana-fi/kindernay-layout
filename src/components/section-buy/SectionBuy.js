@@ -5,12 +5,6 @@ import SectionTitle from "../SectionTitle";
 import { Parallax } from "react-parallax";
 
 function SectionBuy() {
-  const insideStyles = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%,-50%)",
-  };
   return (
     <section id="section-buy" className="align-items-center">
       <Parallax
@@ -19,7 +13,6 @@ function SectionBuy() {
         bgImageStyle={{ objectFit: "none" }}
       >
         <div>
-          {/* <div style={insideStyles}>HTML inside the parallax</div> */}
           <div className="container">
             <div className="row align-items-center justify-content-between">
               <div className="col-sm-12 col-md-8 col-lg-6">

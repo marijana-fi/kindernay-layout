@@ -55,7 +55,7 @@ function Header() {
 
             <button className="login" aria-label="Login">
               <img
-                src={offset > 0 ? "img/bag-icon-black.svg" : "img/bag-icon.svg"}
+                src={offset > 0 ? "img/login-icon-black.svg" : "img/login-icon.svg"}
                 alt="open cart"
               />
             </button>
