@@ -21,7 +21,14 @@ function Header() {
         <div className="row justify-content-between align-items-center">
           <div className="col ">
             <a href="/" title="Go to Home Page">
-              <img src={offset > 0 ? "img/kindernay-black.png" : "img/logo.png"} alt="" />
+              <img
+                src={
+                  offset > 0
+                    ? "/kindernay-layout/img/kindernay-black.png"
+                    : "/kindernay-layout/img/logo.png"
+                }
+                alt=""
+              />
             </a>
           </div>
           <div className="col col-md-auto align-items-center d-flex justify-content-end">
@@ -57,13 +64,21 @@ function Header() {
 
             <button className="login" aria-label="Login">
               <img
-                src={offset > 0 ? "img/login-icon-black.svg" : "img/login-icon.svg"}
+                src={
+                  offset > 0
+                    ? "/kindernay-layout/img/login-icon-black.svg"
+                    : "/kindernay-layout/img/login-icon.svg"
+                }
                 alt="open cart"
               />
             </button>
             <button className="cart" aria-label="Open Cart">
               <img
-                src={offset > 0 ? "img/bag-icon-black.svg" : "img/bag-icon.svg"}
+                src={
+                  offset > 0
+                    ? "/kindernay-layout/img/bag-icon-black.svg"
+                    : "/kindernay-layout/img/bag-icon.svg"
+                }
                 alt="open cart"
               />
               <div className="cart-items">

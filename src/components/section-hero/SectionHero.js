@@ -42,7 +42,7 @@ function SectionHero() {
                     <div className="explore justify-content-center">
                       <img
                         className="align-self-center explore-arrow"
-                        src="img/arrow-down.svg"
+                        src="/kindernay-layout/img/arrow-down.svg"
                         alt="explore"
                       />
                     </div>

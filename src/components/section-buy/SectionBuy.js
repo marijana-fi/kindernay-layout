@@ -8,7 +8,7 @@ function SectionBuy() {
   return (
     <section id="section-buy" className="align-items-center">
       <Parallax
-        bgImage={"img/section-buy-bg.jpg"}
+        bgImage={"/kindernay-layout/img/section-buy-bg.jpg"}
         strength={500}
         bgImageStyle={{ objectFit: "none" }}
       >
@@ -27,7 +27,7 @@ function SectionBuy() {
                 <Button name="btn primary" label="Buy Now" />
               </div>
             </div>
-          </div>{" "}
+          </div>
         </div>
       </Parallax>
     </section>
