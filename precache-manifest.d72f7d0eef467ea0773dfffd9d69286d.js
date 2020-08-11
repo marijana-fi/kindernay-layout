@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b108f0eb295b87207b5720534acafcc",
+    "revision": "f1b8387c0190b5c071624138d3257731",
     "url": "/kindernay-layout/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kindernay-layout/static/css/2.3bd99dd1.chunk.css"
   },
   {
-    "revision": "eef5834d0ea6fad006aa",
-    "url": "/kindernay-layout/static/css/main.b6671bfc.chunk.css"
+    "revision": "147920c76cd1f92b942d",
+    "url": "/kindernay-layout/static/css/main.682ec3d7.chunk.css"
   },
   {
     "revision": "756a6983f78e5c25a07a",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kindernay-layout/static/js/2.0eafdd06.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eef5834d0ea6fad006aa",
+    "revision": "147920c76cd1f92b942d",
     "url": "/kindernay-layout/static/js/main.211f6db5.chunk.js"
   },
   {
