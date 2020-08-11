@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kindernay-layout/precache-manifest.9c8bf8baafe0c4b2a0a959c57b27a602.js"
+  "/kindernay-layout/precache-manifest.d54773f900678ef98b870a9df674080a.js"
 );
 
 self.addEventListener('message', (event) => {
