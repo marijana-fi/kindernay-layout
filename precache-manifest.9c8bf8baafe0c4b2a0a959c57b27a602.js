@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "728ee6288c65b9e13ab10ea437f56cc8",
+    "revision": "a20312a2d3ef192048d89f522a7c6a15",
     "url": "/kindernay-layout/index.html"
   },
   {
